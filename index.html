@@ -11,34 +11,67 @@
     <title>BEDiZEN</title>
 </head>
 
-<body class="px-2 py-4">
+<body class="pt-2 lg:pt-5 pb-15 lg:pb-0">
     <!---------------- HEADER ---------------->
-    <header class="relative container mx-auto  lg:px-4 lg:py-6">
+    <header class="relative container mx-auto  lg:px-2 lg:py-6">
         <nav class="lg:hidden fixed bottom-0 right-0 left-0 font-medium ">
-            <ul class="col-span-1 absolute bottom-full right-0 bg-secondary">
-                <li class="p-2 border border-gray-400 hover:bg-primary hover:text-secondary"><a class="ml-2" href="a-propos-de-nous.html">A propos de nous</a></li>
-                <li class="p-2 border border-gray-400 hover:bg-primary hover:text-secondary"><a class="ml-2" href="#about">Nos services</a></li>
-                <li class="p-2 border border-gray-400 hover:bg-accent hover:text-secondary"><a class="ml-2"  href="contact.html">Contact</a></li>
-            </ul>
-            <div class="bg-secondary grid grid-cols-2">
-                <a class="col-span-1" href="#">
-                    <div class="ml-2"><img class="w-5xs" src="assets/icons/logotype_black.svg" alt="BEDiZEN Logo"></div>
-                </a>
-                <button>Menu</button>
+            <div>
+                <ul class="grid grid-cols-4 bottom-0 right-0  bg-secondary ">
+                    <li class="p-2 bg-white hover:bg-primary hover:text-secondary">
+                            <a href="#">
+                                <div class="flex justify-center" >
+                                    <img class="size-8" src="assets/icons/bedizen_icone_classique_nr.svg" alt="BEDiZEN Logo">
+                                </div>
+                            </a>
+                        </li>
+                    <li class="p-2 hover:bg-primary hover:text-secondary border-t border-gray-400">
+                            <a href="a-propos-de-nous.html">
+                                <div class="flex justify-center" >
+                                    <img class="size-8" src="/assets/icons/icon_about_us_1.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-2   hover:bg-primary hover:text-secondary border-t border-gray-400">
+                            <a href="a-propos-de-nous.html">
+                                <div class="flex justify-center" >
+                                    <img class="size-8" src="/assets/icons/icon_services.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-2   hover:bg-primary hover:text-secondary border-t border-gray-400">
+                            <a href="a-propos-de-nous.html">
+                                <div class="flex justify-center" >
+                                    <img class="size-8" src="/assets/icons/icon_contact.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                </ul>
             </div>
         </nav>
         <nav class="hidden lg:block fixed lg:fixed lg:top-0 right-0 left-0">
-            <div class="bg-secondary">
+            <div class="bg-white">
                 <ul class="font-medium grid lg:grid-cols-4">
-                    <li class="p-2 border border-gray-400 hover:bg-primary hover:text-secondary"">
+                    <li class="p-2 border border-gray-400 lg:border-b-0 hover:bg-primary hover:text-secondary">
                         <a href="#">
                             <div class="ml-2">Home</div>
                             <!--<div><img src="assets/icons/logotype_black.svg" alt="BEDiZEN Logo"></div>-->
                         </a>
                     </li>
-                    <li class="p-2 border border-gray-400 hover:bg-primary hover:text-secondary"><a class="ml-2" href="a-propos-de-nous.html">A propos de nous</a></li>
-                    <li class="p-2 border border-gray-400 hover:bg-primary hover:text-secondary"><a class="ml-2" href="#about">Nos services</a></li>
-                    <li class="p-2 border border-gray-400 hover:bg-accent hover:text-secondary"><a class="ml-2"  href="contact.html">Contact</a></li>
+                    <li class="p-2 border border-gray-400 bg-secondary hover:bg-primary hover:text-secondary">
+                        <a href="a-propos-de-nous.html">
+                            <div class="ml-2" >A propos de nous</div>
+                        </a>
+                    </li>
+                    <li class="p-2 border border-gray-400 bg-secondary hover:bg-primary hover:text-secondary">
+                        <a href="a-propos-de-nous.html">
+                            <div class="ml-2" >Nos Services</div>
+                        </a>
+                    </li>
+                    <li class="p-2 border border-gray-400 bg-secondary hover:bg-primary hover:text-secondary">
+                        <a href="a-propos-de-nous.html">
+                            <div class="ml-2" >Contact</div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -48,7 +81,7 @@
     </header>
 
     <!---------------- INTRODUCTION ---------------->
-    <main>
+    <main class="px-2 py-4">
         <section class="introduction">
             <h2 class="text-xl font-bold text-center"><span class="text-accent" >Au-delà</span> du digital</h2>
             <p>Chez BEDiZEN, nous redéfinissons l’interaction entre les marques et leurs clients. Grâce à la <span
@@ -70,7 +103,7 @@
             </ul>
         </section>
         <!---------------- SERVICES ---------------->
-        <section id="services">
+        <section >
             <h2 class="text-2xl font-bold text-center">Nos services</h2>
             <ul>
                 <li>
@@ -112,7 +145,7 @@
 
     </main>
     <!---------------- FOOTER ---------------->
-    <footer>
+    <footer class="bg-primary text-secondary right-0 left-0">
         <div class="footer-content">
 
             <ul class="footer-links">
@@ -126,16 +159,16 @@
                 <li><a href="#contact">FAQ</a></li>
             </ul>
             <div class="logo">
-                <a class="bedizen-logo" href="/"><img src="assets/icons/logotype_white.svg" alt="BEDiZEN Logo"></a>
+                <a class="bedizen-logo" href="/"><img class="w-60" src="assets/icons/logotype_white.svg" alt="BEDiZEN Logo"></a>
                 <div class="social-media">
-                    <a class="linkedin-logo" href="/"><img src="assets/img/InBug-White.webp" alt="Linkedin Logo"></a>
-                    <a class="twitter-logo" href="/"><img src="assets/img/logo-white.webp" alt="X (Twitter) Logo"></a>
+                    <a class="linkedin-logo" href="/"><img class="w-10" src="assets/img/InBug-White.webp" alt="Linkedin Logo"></a>
+                    <a class="twitter-logo" href="/"><img class="w-10" src="assets/img/logo-white.webp" alt="X (Twitter) Logo"></a>
                 </div>
             </div>
         </div>
         <p>&copy; 2025 BEDiZEN. Tous les droits réservés.</p>
     </footer>
-    <a class="up-button" href="#"><img src="assets/icons/up_button.svg" alt="Button pour remonter" ></a>
+    <a class="fixed right-2 bottom-20 lg:bottom-3"  href="#"><img class="w-10 lg:w-20" src="assets/icons/up_button.svg" alt="Button pour remonter" ></a>
 </body>
 
 </html>
